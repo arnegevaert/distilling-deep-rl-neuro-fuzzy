@@ -1,0 +1,10 @@
+{
+  "env_name": "LunarLander-v2",
+  "rules": 6,
+  "mem_len": 50000,
+  "gamma": 0.95,
+  "batch_size": 16,
+  "episodes": 100,
+  "runs": 50,
+  "output": true
+}

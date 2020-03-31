@@ -1,0 +1,24 @@
+{
+  "env_name": "LunarLander-v2",
+  "teacher_state_dict_loc": "../saved_models/lunarlander-dqn.pth",
+  "ignore_dims": [6, 7],
+  "init_episodes": 50,
+  "clustering": {
+    "type": "gmm",
+    "n_components": 4
+  },
+  "kl_div_tau": 0.1,
+  "anfis_type": "WeightedTNorm",
+  "regularizers": [
+    {"type":  "Merge", "lambda":  0.5},
+    {"type":  "TNormWeight", "lambda":  1}
+  ],
+  "lr": 0.01,
+  "distill_episodes": 100,
+  "distill_batch_size": 32,
+  "distill_mem_len": 1000000,
+  "am_thresh": 0.95,
+  "wm_thresh": 0.01,
+  "runs": 50,
+  "output": true
+}

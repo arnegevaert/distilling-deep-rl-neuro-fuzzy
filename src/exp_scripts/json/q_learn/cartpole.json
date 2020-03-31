@@ -1,0 +1,10 @@
+{
+  "env_name": "CartPole-v1",
+  "rules": 3,
+  "mem_len": 50000,
+  "gamma": 0.95,
+  "batch_size": 32,
+  "episodes": 50,
+  "runs": 50,
+  "output": true
+}
